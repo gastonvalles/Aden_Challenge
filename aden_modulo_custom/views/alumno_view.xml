@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
+        <!-- form view -->
         <record id="view_alumno_form" model="ir.ui.view">
             <field name="name">alumno.form</field>
-            <field name="model">alumno.model</field>
+            <field name="model">alumno</field>
             <field name="arch" type="xml">
-                <form>
+                <form string="Lista de Alumnos">
                     <sheet>
                         <group>
                             <field name="nombre" />
@@ -19,6 +20,13 @@
                     </sheet>
                 </form>
             </field>
+        </record>
+        <!-- action -->
+        <record>
+            <field name="name">Nombre</field>
+            <field name="res_model">alumno</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_alumno_form" />
         </record>
     </data>
 </odoo>
