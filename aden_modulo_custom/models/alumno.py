@@ -1,8 +1,7 @@
-from odoo import models, fields
+from odoo import api, fields, models
 
 class Alumno(models.Model):
     _name = 'alumno.model'
-    _description = 'Modelo de Alumno'
 
     nombre = fields.Char(string='Nombre')
     apellido = fields.Char(string='Apellido')
