@@ -2,6 +2,7 @@ from odoo import fields, models
 
 class Alumno(models.Model):
     _name = 'alumno.model'
+    _description = "Modelo de Alumno"
 
     nombre = fields.Char(string='Nombre')
     apellido = fields.Char(string='Apellido')

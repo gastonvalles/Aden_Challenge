@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
-        <record id="view_inscripcion_form" model="ir.ui.view">
-            <field name="name">inscripcion.form</field>
-            <field name="model">inscripcion.model</field>
-            <field name="arch" type="xml">
-                <form>
-                    <sheet>
-                        <group>
-                            <!-- aca van los campos de inscripcion -->
-                        </group>
-                    </sheet>
-                </form>
-            </field>
-        </record>
-    </data>
+    <record id="view_inscripcion_form" model="ir.ui.view">
+        <field name="name">inscripcion.form</field>
+        <field name="model">inscripcion.model</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="programa" />
+                        <field name="descripcion" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
 </odoo>
